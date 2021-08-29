@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Toxic.h" />
+    <ClInclude Include="Utils\String.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Convert.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Random.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Management\AssetsManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Management\GUIManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AARect.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Color.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Object.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\UI\Layout.h">
+      <Filter>Graphics\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\IDrawable.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\ITransformable.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\Shader.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\ShaderProgram.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\TransformMatrix.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\Vertex.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Rendering\VertexArray.h">
+      <Filter>Graphics\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\ContextMenu.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Cursor.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Icon.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="System\IPrintable.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Log.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Event.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\EventHandler.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ErrorTracker.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Toxic.cpp" />
+    <ClCompile Include="Utils\String.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Convert.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Management\AssetsManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Management\GUIManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AARect.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Color.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Object.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\UI\Layout.cpp">
+      <Filter>Graphics\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\ITransformable.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\Shader.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\ShaderProgram.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\TransformMatrix.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\Vertex.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Rendering\VertexArray.cpp">
+      <Filter>Graphics\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="GL\ContextMenu.cpp">
+      <Filter>GL</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Cursor.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Icon.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Log.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\EventHandler.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ErrorTracker.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3bf281df-ae41-422c-907d-0c5389629650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL">
+      <UniqueIdentifier>{a6743236-7cc5-4bbb-b7d2-a903bb45bd31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{6bfc1bee-cdf3-4f6f-930a-4eccb29d32dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Management">
+      <UniqueIdentifier>{5654dd4e-b704-4ce5-b4a3-fdd1a959e2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{2a90951a-4028-446b-903d-934289f491ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{082ed520-5d7e-4b8e-9014-71c98a630ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{b5b5fa91-42d0-4ce2-9441-9c99a85a2062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{771dbd23-93ef-445e-b667-f8b8565cfae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Rendering">
+      <UniqueIdentifier>{e3970999-678a-4cb0-9a2f-0f577f2f2b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\UI">
+      <UniqueIdentifier>{bcd32f9c-7f36-4da0-84f3-4dbe17624a3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

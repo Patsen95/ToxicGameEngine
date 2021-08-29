@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="GL\ContextMenu.h" />
+    <ClInclude Include="Graphics\AARect.h" />
+    <ClInclude Include="Graphics\Color.h" />
+    <ClInclude Include="Graphics\Object.h" />
+    <ClInclude Include="Graphics\Rendering\IDrawable.h" />
+    <ClInclude Include="Graphics\Rendering\ITransformable.h" />
+    <ClInclude Include="Graphics\Rendering\Shader.h" />
+    <ClInclude Include="Graphics\Rendering\ShaderProgram.h" />
+    <ClInclude Include="Graphics\Rendering\TransformMatrix.h" />
+    <ClInclude Include="Graphics\Rendering\Vertex.h" />
+    <ClInclude Include="Graphics\Rendering\VertexArray.h" />
+    <ClInclude Include="Graphics\UI\Layout.h" />
+    <ClInclude Include="Management\AssetsManager.h" />
+    <ClInclude Include="Management\GUIManager.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Matrix.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Math\Vec2.h" />
+    <ClInclude Include="Math\Vec3.h" />
+    <ClInclude Include="Math\Vec4.h" />
+    <ClInclude Include="System\Convert.h" />
+    <ClInclude Include="System\ErrorTracker.h" />
+    <ClInclude Include="System\Event.h" />
+    <ClInclude Include="System\EventHandler.h" />
+    <ClInclude Include="System\IPrintable.h" />
+    <ClInclude Include="System\Log.h" />
+    <ClInclude Include="Toxic.h" />
+    <ClInclude Include="Utils\String.h" />
+    <ClInclude Include="Window\Cursor.h" />
+    <ClInclude Include="Window\Icon.h" />
+    <ClInclude Include="Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="GL\ContextMenu.cpp" />
+    <ClCompile Include="Graphics\AARect.cpp" />
+    <ClCompile Include="Graphics\Color.cpp" />
+    <ClCompile Include="Graphics\Object.cpp" />
+    <ClCompile Include="Graphics\Rendering\ITransformable.cpp" />
+    <ClCompile Include="Graphics\Rendering\Shader.cpp" />
+    <ClCompile Include="Graphics\Rendering\ShaderProgram.cpp" />
+    <ClCompile Include="Graphics\Rendering\TransformMatrix.cpp" />
+    <ClCompile Include="Graphics\Rendering\Vertex.cpp" />
+    <ClCompile Include="Graphics\Rendering\VertexArray.cpp" />
+    <ClCompile Include="Graphics\UI\Layout.cpp" />
+    <ClCompile Include="Management\AssetsManager.cpp" />
+    <ClCompile Include="Management\GUIManager.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="System\Convert.cpp" />
+    <ClCompile Include="System\ErrorTracker.cpp" />
+    <ClCompile Include="System\EventHandler.cpp" />
+    <ClCompile Include="System\Log.cpp" />
+    <ClCompile Include="Toxic.cpp" />
+    <ClCompile Include="Utils\String.cpp" />
+    <ClCompile Include="Window\Cursor.cpp" />
+    <ClCompile Include="Window\Icon.cpp" />
+    <ClCompile Include="Window\Window.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{704C6BE0-871A-463F-BC54-E2C697F24F92}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ToxicEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>TOXIC_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\include\GL;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\lib;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>TOXIC_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\include\GL;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\lib\x64;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetDir)ToxicEngine.dll" "$(SolutionDir)EngineTest"
+xcopy "$(TargetDir)ToxicEngine.lib" "$(SolutionDir)EngineTest\Lib\x64"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>TOXIC_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\include\GL;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\lib;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>TOXIC_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\include\GL;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\freeglut\lib\x64;F:\Dysk Google\Projects\Programming\Visual\Toxic Game Engine\ToxicEngine\Libs\glew\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetDir)ToxicEngine.dll" "$(SolutionDir)EngineTest"
+xcopy "$(TargetDir)ToxicEngine.lib" "$(SolutionDir)EngineTest\Lib\x64"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
